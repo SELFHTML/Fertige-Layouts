@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title>Hallo Welt!</title>
+	<meta name="description" content="Beispielseite SELFHTML-Wolke, zentriert">
+	<meta name="keywords" content="Wolke, zentriert, mittig">
+	<meta name="author" content="selfhtml">
+<!-- Inspiriert von http://suit.rebell.at/artikel/horizontal-und-vertikal-zentrieren-mit-xhtml-und-css -->
+<style type="text/css" media="all">
+
+/* Webfont laden */
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+/* Funktionalität des Designs */
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+#pixel {
+	height: 45%; /* Vertikale Ausrichtung des Containers */
+	margin-bottom: -8em; /* Halbe Höhe des Containers */
+	width: 1px;
+	float: left;
+}
+#container {
+	height: 16em; /* Höhe */
+	width: 32em; /* Breite */
+	margin: 0 auto;
+	clear: left;
+}
+
+/* Aussehen */
+body {
+	background-color: #a2d4f2;
+	color: #666;
+	font-family: 'Indie Flower', cursive;
+	font-size: 100.01%;
+}
+
+#container {
+	background-color: #fff;
+	border: solid 2px #89b2cc;/* Fensterrand */
+	border-radius: 80px 60px 80px 0px; /* Fensterradius */
+	border-bottom: 12px solid #89b2cc;
+	text-align: center;
+}
+
+h1 {
+	margin: 0.4em 0.5em 0;
+	color: #2d2d2d;
+	font-size: 4.4em;
+}
+p {
+	margin: 0.2em 1.2em 1.5em;
+	color: #c28f2f;
+	font-size: 1.8em;
+	line-height: 1.0em;
+}
+</style>
+</head>
+
+<body>
+	<!-- Ohne Webfont 'Indie Flower' kann dieses Script gelöscht werden. -->
+	<script type="text/javascript">
+	WebFontConfig = {
+		google: { families: [ 'Indie+Flower::latin' ] }
+	};
+	(function() {
+		var wf = document.createElement('script');
+		wf.src =  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	})();
+	</script>
+	
+	<div id="pixel"></div>
+	<div id="container">
+		<h1>Hallo Welt!</h1>
+		<p>Ich bin die SELFHTML-Wolke. Zum Wolkigsein brauche ich jedoch einen modernen Browser. ;-)</p>
+	</div>
+</body>
+</html>
