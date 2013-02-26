@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de" itemscope itemtype="http://schema.org/">
+<head>
+<!-- 
+	Damit das ganze auch in älteren IEs funktioniert, muss neben dem HTML5Shiv noch ein separater Header per .htaccess mitgesendet werden.
+	<IfModule mod_headers.c>
+		Header set X-UA-Compatible "IE=Edge,chrome=1"
+		<FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|xpi|safariextz|vcf)$" >
+			Header unset X-UA-Compatible
+		</FilesMatch>
+	</IfModule>
+
+	Alternative (nicht valider Meta-Tag)
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+-->
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta charset="utf-8">
+	<title>Real HTML5 Template</title>
+	<meta name="description" content="Real HTML5 Template, Template-Vorlage für SELFHTML">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="css/main-style.css" rel="stylesheet" title="Default Stylesheet">
+	<link href="css/structure.css" rel="alternate stylesheet" title="Structure Stylesheet">
+</head><!-- head ends -->
+<body itemscope itemtype="http://schema.org/WebPage">
+
+
+<!-- 
+	Skiplinks
+	Mit der Tabtaste Inhalte anspringen.
+-->
+<ul id="skiplinks">
+	<li><a href="#navigation">Zum Hauptmenü</a></li>
+	<li><a href="#search">Zur Suche</a></li>
+	<li><a href="#main_content">Zum Inhalt</a></li>
+</ul><!-- skiplinks ends -->
+
+
+<!-- 
+	Header 
+-->
+<header>
+	<hgroup lang="en">
+		<h1><a href="./"><abbr title="Real HTML5">RHTML5</abbr> Template</a></h1>
+		<h2>Built on Standards, made with Creativity!</h2>  
+	</hgroup>
+</header><!-- header ends -->
+
+
+
+<!-- 
+	inner_wrap 
+	Im inner_wrap wird der eigentliche Inhalt, Breadcrumbs und Sidebar zu einem Element gruppiert.
+	Unter Umständen könnte man das hier auch als section auszeichnen.
+-->
+<div id="inner_wrap">
+
+
+	<!-- 
+		aside (1. Sidebar mit dem Hauptmenu)
+	-->
+	<aside>
+		<h2>Hauptmenu</h2>
+		<nav>
+			<ul id="navigation">
+				<li><span>Startseite</span></li>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS3</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">Sonstiges</a></li>
+			</ul>
+		</nav>
+		<!--
+			Suchbox
+		-->
+		<form id="search" action="#" method="post">
+			<fieldset>
+				<legend>Suche</legend>
+				<p><input type="text" placeholder="Suchen"></p>
+			</fieldset>
+		</form>   
+	</aside><!-- aside ends -->
+	
+
+	<!-- 
+		breadcrumb (Brotkrümelnavigation)
+		Das Breadcrumb-Menu basiert direkt auf einem von Google empfohlenem Schemata.
+		http://support.google.com/webmasters/bin/answer.py?hl=de&answer=185417
+		Eine Liste wäre hier auch denkbar, stellt sich nur die Frage, wie das aussehen könnte?
+	-->
+	<nav id="breadcrumb">
+		<h2>Sie sind hier:</h2>
+		<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+			<a itemprop="url" href="./"><span itemprop="title">Startseite</span></a>
+		</div>
+		<!-- so würde es weiter gehen, wenn man auf der Seite "impressum" ist
+		<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+			<a itemprop="url" href="./impressum"><span itemprop="title">Impressum</span></a>
+		</div> -->
+	</nav><!-- breadcrumb ends -->
+
+
+	<!-- 
+		article 
+		Der eigentliche Inhalt der Seite
+	-->
+	<article id="main_content">
+		<h1 lang="en"><abbr title="Real HTML5">RHTML5</abbr> Template</h1>
+		<p><img src="css/img/shure-44.jpg" width="220" height="124" alt="Shure M 44-7" itemprop="image" />
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+		<blockquote>Nimm an, was nützlich ist. Laß weg, was unnütz ist. Und füge das hinzu, was dein Eigenes ist.
+			<cite title="Bruce Lee, 27. November 1940 - 20. Juli 1973"><a href="http://de.wikipedia.org/wiki/Bruce_Lee">Bruce Lee</a></cite>
+		</blockquote>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+		<!-- 
+			Eine einfache Tabelle
+		-->
+		<h2>Eine einfache Tabelle</h2>    
+		<table>
+			<thead>
+				<tr><th>ID</th> <th>Status</th> <th>Browser</th> <th>OS</th> <th>Ip</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>6</td> <td>410</td> <td>Links 2.6</td> <td>NT 5.1</td> <td>111.222.333.444</td></tr> 
+				<tr><td>12</td><td>404</td> <td>Firefox 13</td> <td>APES</td> <td>111.222.333.444</td></tr>            
+			</tbody>
+			<tfoot>
+				<tr><td colspan="5">Statistiken</td></tr>
+			</tfoot>
+		</table>
+		<!-- 
+			Eine einfache Liste
+		-->
+		<h3>Eine einfache Liste</h3>
+		<ul>
+			<li>Diverses</li>
+			<li>PHP</li>
+			<li>Webtechniken
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Javascript</li>  
+				</ul>         
+			</li>
+		</ul>
+	</article><!-- article ends -->
+
+	<!-- 
+		aside (2. Sidebar mit Submenu und Social Network Buttons)
+	-->
+	<aside>
+		<h2>Submenu</h2>
+		<nav>
+			<ul id="sub_navigation">
+				<li><a href="#">Artikel</a></li>
+				<li><a href="#">Kategorien</a></li>
+				<li><a href="#">Auswahl</a></li>
+				<li><a href="#">Sonstiges</a></li>
+			</ul>
+		</nav>
+		<!-- 
+			Social Networks wie Facebook oder Google+
+		-->
+		<section id="network_tools">      
+			<h3 lang="en">Social Network</h3>
+			<div style="display:none;">Hier kommen Social Buttons etc. rein
+			<!-- Nur zu Demozwecken
+				<div class="g-plusone" data-size="tall" data-href="http://demo.team-idilico.net/rhtml5finaltemplate/"></div>
+				<div class="fb-like" data-href="http://demo.team-idilico.net/rhtml5finaltemplate/" data-send="false" data-layout="box_count" data-width="80" data-show-faces="false"></div>
+			-->
+			</div>
+		</section>
+	</aside><!-- aside ends -->
+
+</div><!-- inner_wrap ends -->
+
+
+<!--
+	Footer
+-->
+<footer>
+
+	<!--
+		Vcard (http://microformats.org/, http://www.schema.org/)
+
+		- microformats.org gibt die Klassen vor (class=" ...")
+		- schema.org gibt die item-types vor (itemscope, itemtype, itemprop)
+
+		1. Box
+	-->
+	<section class="vcard organization" itemscope itemtype="http://schema.org/Organization">
+		<h2>Anschrift</h2>
+		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<span class="org" itemprop="name">Fa. Mustermacher</span><br>
+			<span class="fn" itemprop="name">Max Mustermann</span><br>
+			<span class="street-address" itemprop="streetAddress">Musterstr. 1</span><br>
+			<span class="postal-code" itemprop="postalCode">12345</span>
+			<span class="locality" itemprop="addressLocality">Musterhausen</span>                         
+		</p>
+		<p><a href="#" id="map_button" title="Anfahrt">Anfahrt</a></p>
+	</section><!-- 1. Box ends -->
+
+	<!-- 
+		2. Box
+	-->
+	<section class="vcard contact_to" itemscope itemtype="http://schema.org/Organization">
+		<h2>Öffnungszeiten</h2>
+		<p>
+			<span class="time" title="Öffnungszeiten: Montag bis Samstag 10:00 - 21:00 Uhr">Mo-Sa: 10:00 - 21:00 Uhr</span>                      
+		</p>
+		<h3>Kontakt</h3>      
+		<p>
+			<span class="tel" itemprop="telephone">Tel: <a href="tel:+49123567890">+49 123 / 567 890</a></span><br>
+			<span class="email" itemprop="email">Email: <a href="mailto:info@example.org">info@example.org</a></span>                      
+		</p>
+		<nav><!-- Footer-Menu, falls vorhanden -->
+			<ul id="footer_menu">
+				<li><a href="#">Impressum</a></li>
+				<li><a href="#">Kontakt</a></li>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</nav>
+	</section><!-- 2. Box ends -->
+	
+	<!-- 
+		3. Box
+	-->
+	<section class="vcard about_us">
+		<h2>Über Uns</h2>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+	</section><!-- 3. Box ends -->
+
+	<!-- 
+		4. Box
+	-->
+	<section class="partner_sites">
+		<h2>Partnerseiten</h2>
+		<ul id="parnter_sites">
+			<li><a href="http://dryicons.com/free-icons/preview/socialize-icons-set/">Socialize Icon Set</a></li>
+			<li><a href="http://www.fontsquirrel.com/fonts/Orbitron">Font Squirrel</a></li>
+			<li><a href="http://www.selfhtml.org/">SELFHTML</a></li>
+			<li><a href="http://googlewebmastercentral-de.blogspot.de/">Webmaster Zentrale</a></li>
+			<li><a href="http://www.webkrauts.de/">Webkrauts</a></li>
+			<li><a href="http://www.drweb.de/magazin/">Dr. Web Magazin</a></li>
+		</ul>    
+		<div class="vcard">
+			<h3>Template</h3>
+			<p>
+				<span class="fn" itemprop="name">Engin Yıldız</span><br>
+				<span class="email" itemprop="email">nginone@gmail.com</span><br>
+			</p>
+		</div>      
+	</section><!-- 4. Box ends -->
+	 
+	<!--
+		Copyright
+	-->
+	<hr />
+	<section class="vcard copyright">
+		<span class="copy">© 2012 SELFHTML</span>
+	</section>
+
+</footer><!-- footer ends -->
+
+
+<!-- 
+	RSS-Feed abonnieren, Social Network Buttons etc.
+-->
+<ul id="social_buttons">
+	<li><a href="#" id="feed_button" title="RSS-Feed Abonnierren">RSS-Feed Abonnierren</a></li>
+	<li><a href="#" id="fb_button" title="Folge uns auf Facebook">Folge uns auf Facebook</a></li>
+	<li><a href="#" id="gp_button" title="Folge uns auf Google+">Folge uns auf Google+</a></li>
+	<li><a href="#" id="tw_button" title="Folge uns auf Twitter">Folge uns auf Twitter</a></li>
+</ul>
+
+<!--
+	Ab hier kommen Javascripte, eigene oder Scripte von diversen Diensten (Facebook und Co.)
+-->
+<!--
+<div id="fb-root"></div>
+<script type="text/javascript">
+	window.___gcfg = {lang: 'de'};
+	(function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+-->
+</body>
+</html> 
