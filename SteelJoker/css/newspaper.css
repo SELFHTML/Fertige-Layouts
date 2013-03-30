@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'SpecialEliteRegular';
+    src: url('fonts/specialelite/SpecialElite-webfont.eot');
+    src: url('fonts/specialelite/SpecialElite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/specialelite/SpecialElite-webfont.woff') format('woff'),
+         url('fonts/specialelite/SpecialElite-webfont.ttf') format('truetype'),
+         url('fonts/specialelite/SpecialElite-webfont.svg#SpecialEliteRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	font-family: 'SpecialEliteRegular', "Times New Roman", serif;
+	font-size: 1em;
+	color: #000;
+	max-width:60em;
+	margin:auto;
+	background: #FFF;
+	
+}
+
+header
+{
+	color:#FFF;
+	background:#000;
+	border-top-left-radius: .9em;
+	border-top-right-radius: .9em;
+	border-bottom-left-radius: .9em;
+	border-bottom-right-radius: .9em;
+	margin: 1em 0;
+}
+
+h1
+{
+	text-align:center;
+	font-size: 4em;
+	padding: .5em;
+	margin: 0;
+}
+
+menu
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+menu li
+{
+	display:inline-block;
+	min-width: 5em;
+	padding: 0;
+}
+
+#content
+{
+	margin:.5em 0;
+}
+
+footer
+{
+	background: #000;
+	color: #FFF;
+	margin:.5em 0;
+	text-align: center;
+	font-size:.8em;
+}
+
+menu
+{
+	border-top:.3em solid #DDD;
+}
+
+menu a
+{
+	display:block;
+	color: #000;
+	text-decoration: none;
+	background: #DDD;
+	padding:.2em .4em;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+}
+
+menu a:focus {
+	background: #AAA;
+
+}
+
+menu a:hover {
+	background: #AAA;
+
+}
+
+menu a:active {
+	background: #AAA;
+
+}

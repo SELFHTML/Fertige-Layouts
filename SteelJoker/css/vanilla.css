@@ -1,0 +1,62 @@
+body
+{
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 1em;
+	color: #000;
+	max-width:60em;
+	margin:1em auto;
+	background: #FFF;
+	
+}
+
+header
+{
+	border:1px solid #000;
+	
+}
+
+menu
+{
+	border:1px solid #000;
+	list-style-type: none;
+	padding: 0;
+	margin:.5em 0;
+}
+
+menu li
+{
+	display:inline-block;
+}
+
+#content
+{
+	border:1px solid #000;
+	margin:.5em 0;
+}
+
+footer
+{
+	border:1px solid #000;
+	margin:.5em 0;
+}
+
+menu a:link {
+	color: #000;
+	text-decoration: none;
+}
+menu a:visited {
+	color: #000;
+	text-decoration: none;
+}
+menu a:focus {
+	color: #000;
+	text-decoration: underline;
+}
+menu a:hover {
+	color: #ABA;
+	text-decoration: underline;
+}
+menu a:active {
+	color: #ABA;
+	text-decoration: underline;
+}

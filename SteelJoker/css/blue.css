@@ -1,0 +1,144 @@
+
+@font-face {
+    font-family: 'JuraLight';
+    src: url('fonts/jura/Jura-Light-webfont.eot');
+    src: url('fonts/jura/Jura-Light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/jura/Jura-Light-webfont.woff') format('woff'),
+	url('fonts/jura/Jura-Light-webfont.ttf') format('truetype'),
+	url('fonts/jura/Jura-Light-webfont.svg#JuraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+@font-face {
+    font-family: 'JuraBook';
+    src: url('fonts/jura/Jura-Regular-webfont.eot');
+    src: url('fonts/jura/Jura-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/jura/Jura-Regular-webfont.woff') format('woff'),
+	url('fonts/jura/Jura-Regular-webfont.ttf') format('truetype'),
+	url('fonts/jura/Jura-Regular-webfont.svg#JuraBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+@font-face {
+    font-family: 'JuraMedium';
+    src: url('fonts/jura/Jura-Medium-webfont.eot');
+    src: url('fonts/jura/Jura-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/jura/Jura-Medium-webfont.woff') format('woff'),
+	url('fonts/jura/Jura-Medium-webfont.ttf') format('truetype'),
+	url('fonts/jura/Jura-Medium-webfont.svg#JuraMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+@font-face {
+    font-family: 'JuraDemiBold';
+    src: url('fonts/jura/Jura-DemiBold-webfont.eot');
+    src: url('fonts/jura/Jura-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/jura/Jura-DemiBold-webfont.woff') format('woff'),
+	url('fonts/jura/Jura-DemiBold-webfont.ttf') format('truetype'),
+	url('fonts/jura/Jura-DemiBold-webfont.svg#JuraDemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+
+
+body
+{
+	font-family: 'JuraBook', "Times New Roman", serif;
+	font-size: 1em;
+	color: #000;
+	max-width:60em;
+	margin:1em auto;
+	background: #2C3C4C;
+	
+}
+
+header
+{
+	color:#FFF;
+	background:#718CA5;
+	border-top-left-radius: .9em;
+	border-top-right-radius: .9em;
+	border-bottom-left-radius: .9em;
+	border-bottom-right-radius: .9em;
+}
+
+h1
+{
+	text-align:center;
+	font-family: 'JuraDemiBold';
+	font-size: 4em;
+	margin: 0;
+}
+
+menu
+{
+	float:left;
+	list-style-type: none;
+	padding: 0;
+	margin:.5em 0;
+	//background:#48141B;
+}
+
+menu li
+{
+	min-width:8em;
+	padding:0;
+	
+	margin:0 0 .5em 0;
+}
+
+#content
+{
+	margin:.5em 0;
+	margin-left: 9em;
+	background: #BAB37B;
+	padding:.1em .5em;
+	border-radius: .5em;
+}
+
+footer
+{
+	background: #718CA5;
+	color: #FFF;
+	margin:.5em 0;
+	text-align: center;
+	font-size:.8em;
+	border-radius: .4em;
+}
+
+
+
+menu a
+{
+	display:block;
+	color: #000;
+	text-decoration: none;
+	background: #BAB37B;
+	padding:.5em .4em;
+	border-radius: .5em;
+	margin: 0 0 0 0;
+}
+
+menu a:focus {
+	background: #48141B;
+	color: #BAB58C;
+	
+}
+
+menu a:hover {
+	background: #48141B;
+	color: #BAB58C;
+}
+
+menu a:active {
+	background: #48141B;
+	color: #BAB58C;
+}
