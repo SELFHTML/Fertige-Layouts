@@ -25,6 +25,10 @@ header img
 	top:-10px;
 	left: -25px;
 	z-index:1;
+	/* 1/basic fontsize*pixel = em */
+	width: 11.8125em;
+	height: 11.375em;
+
 }
 
 h1
