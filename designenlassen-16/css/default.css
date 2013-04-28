@@ -1,0 +1,104 @@
+/*
+		#####################################################################################################################
+		#####################################################################################################################
+		#####################################################################################################################
+		#############################								#############################
+		#############################								#############################
+		#############################		Autor Design: DUIT Media				#############################
+		#############################		Autor Design URL: http://duit-media.de		#############################
+		#############################		Autor Umsetzung: WEB3x				#############################
+		#############################		Autor URL: http://web3x.de				#############################
+		#############################		Autor Name: Markus Plätzer & Eugen Ganshorn		#############################
+		#############################								#############################
+		#############################								#############################
+		#####################################################################################################################
+		#####################################################################################################################
+		#####################################################################################################################
+*/
+
+
+/* ====================================================   GLOBAL DEFINATION   ==================================================== */
+
+*				{ margin: 0px; padding: 0px; }
+
+img, img a, a img			{ border: none; }
+
+body 				{ margin: 0px auto; font-size: 0.75em; font-weight: normal; font-family: Arial; color: #474747;  background: #FFFFFF; }
+
+a 				{ color:#4A4A4A; text-decoration: none; outline: none; }
+a:hover 				{ color: #8F8F90; }
+a:focus 				{ outline: none; }
+#header p a 			{ color:#843953; text-decoration: underline; font-weight: bold; }
+#header p a:hover 			{ color: #8F8F90; }
+#header #header-right ul li a		{ color: #717171; text-decoration: underline; }
+a.more				{ float: right; padding: 5px 25px; color: #8F8F90; text-decoration: underline; background: url('../img/icon/arrow.png') no-repeat right; }
+#footer a				{ color: #989898; }
+#header #header-right ul li a:hover,	
+a.more:hover,
+#footer a:hover			{ color: #4A4A4A; text-decoration: none; }
+
+p 				{ text-align: left; line-height: 1.6em; padding: 20px 0px; }
+p.border				{ border-top: 1px #BBBCBE solid; margin-top: 10px; }
+
+h1				{ font-size: 1.75em; font-weight: bold; font-family: 'Tauri', serif; color:#565659; }
+h2				{ font-size: 1.875em; font-weight: normal; color: #7C2D48; text-transform: none; margin-bottom: 5px; }
+h2 img				{ float: left; margin: -5px 10px 0px 0px; }
+h3				{ font-size: 1.10em; font-weight: normal; font-family: 'Tauri', serif; color: #898989; text-transform: none; }
+
+ul.bullets				{ float: left; list-style-type: bullets; margin: 30px 0px 0px 13px; color: #FFA128; }
+ul.bullets li			{ float: left; width: 100%; font-size: 1.10em; font-weight: bold; list-style-type: bullets; padding-left: 5px; line-height: 2.0em; color: #FFA128; }
+ul.bullets li span			{ color: #474747; }
+
+
+/* ====================================================   WRAPPER   ==================================================== */
+
+#wrapper 				{ width: 950px; margin: 0px auto; text-align: left; }
+
+
+/* ====================================================  HEADER   ==================================================== */
+
+#header				{ float: left; width: 100%; height: 260px; background: url('../img/header.png') no-repeat center bottom; border-left: 1px #E5E7EB solid; border-right: 1px #E5E7EB solid; }
+
+#header #logo			{ float: left; margin: 30px 0 0 30px; padding: 10px 0px 25px 70px; background: url('../img/logo.png') no-repeat left; }
+
+#header #header-right		{ float: right; margin: -15px 30px 0px 0px; color: #717171; }
+#header #header-right ul		{ float: right;  list-style-type: none; }
+#header #header-right ul li		{ line-height: 1.8em; }
+#header #header-right ul li label	{ margin: 0px 10px 0px -70px; font-weight: bold; }
+ span.hot				{ font-weight: bold; color:#843953; text-align: right; }
+
+
+
+/* ====================================================  HEADER   ==================================================== */
+
+#navbar		 		{ float: left; width: 100%;  list-style-type: none; padding-bottom: 36px; background: url('../img/shadow.png') no-repeat bottom; }
+#navbar ul	 		{ float: left; width: 100%;  list-style-type: none; background: #7C2D48; border-left: 1px #7C2D48 solid; border-right: 1px #7C2D48 solid; }
+#navbar li		 		{ float: left; display: inline-block; margin-right: 1px; background: url('../img/border.png') no-repeat left; }
+#navbar li.first-child			{ float: left; margin-left: 15px; background: none; }
+#navbar li.last-child	 		{ float: right; margin-right: 30px; background: none; }
+#navbar li a 			{ float: left; padding: 16px; color: #FFFFFF; }
+#navbar li a:hover 			{ background: #6D273F; }
+
+/* ====================================================   CONTENT   ==================================================== */
+
+#content	 			{ float: left; width: 100%; background: #FAFBFC; border: 1px #E5E7EB solid; }
+#content .container			{ float: left; width: 650px;  margin: 30px 0px 0px 30px; }
+#content .news			{ float: left; width: 620px;  margin: 30px 0px 0px -30px; padding: 30px 30px 0px 30px; background: #EEEEEE; }
+#content .news-left			{ float: left; width: 280px; min-height: 220px; margin: 0px 30px 30px 0px; background: url('../img/icon/phone.png') no-repeat right bottom; } 
+#content .news-right		{ float: left; width: 280px; margin: 0px 0px 0px 30px; background: url('../img/icon/letter.png') no-repeat right bottom; }
+
+#sitebar				{ float: left; width: 200px; padding: 35px 30px 0px 40px; }
+#sitebar .box			{ float: left; margin-bottom: 20px; }
+
+/* ====================================================   FOOTER   ==================================================== */
+
+#footer				{ float: left; width: 100%; margin: 10px 0px 40px 0px; color: #989898;  }
+#footer-left			{ float: left; margin-left: 22px; }
+#footer-left ul			{ float: right;  list-style-type: none; }
+#footer-left ul li			{ display: inline-block; border-right: 1px #989898 solid; }
+#footer-left ul li.last-child		{ display: inline-block; border: none; }
+#footer-left ul li a			{ margin: 0px 8px; }
+
+#footer-right			{ float: right; margin-right: 30px; }
+
+

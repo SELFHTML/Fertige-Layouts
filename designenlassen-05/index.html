@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+<head>
+
+	<meta charset="utf-8">
+	<title>Cloud Com</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<div id="header">
+
+		<div class="wrapper">
+			<a href="#"><img src="img/logo.png" width="238" height="48" alt="Webseiten Name" id="logo"></a>
+ 			<ul>
+				<a href="#"><li id="home">Home</li></a>
+				<a href="#"><li id="unternehmen">Unternehmen</li></a>
+				<a href="#"><li id="leitungen">Leitungen</li></a>
+				<div class="dropdown leitungen">
+					<a href="#">Unterpunkt eins</a>
+					<a href="#">Unterpunkt zwei</a>
+				</div>
+				<a href="#"><li id="vpn">VPN</li></a>
+				<a href="#"><li id="mobilfunk">Mobilfunk</li></a>
+				<div class="dropdown mobilfunk">
+					<a href="#">Unterpunkt eins</a>
+					<a href="#">Unterpunkt zwei</a>
+					<a href="#">Unterpunkt drei</a>
+					<a href="#">Unterpunkt vier</a>
+				</div>
+				<a href="#"><li id="cloud">Cloud Produkte</li></a>
+			</ul>
+		</div><!--wrapper-->
+
+	</div><!--header-->
+
+
+	<div class="wrapper">
+	<img src="img/teaser.png" width="379" height="254" alt="teaserbild" id="teaser">
+		<div id="teaser-text">
+			<h1>Willkommen bei uns</h1>
+			<p>Tart toffee icing croissant lemon drops chocolate tiramisu</p>
+			<p>Pastry topping sugar plum topping tart</p>
+			<p>Wafer dragée croissant carrot</p>
+		</div><!--teaser-text-->
+
+		<div id="content">
+		<div id="schatten"></div>
+			<div id="news"><strong>Aktuelle News:</strong> 12.04.2012 | <strong>Unsere neue Webseite geht online!</strong></div>
+			<div id="news-bg"></div>
+			<div class="content vpn">
+				<h2>VPN</h2>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+			</div>
+
+			<div class="content mobil">
+				<h2>Mobilfunk</h2>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+			</div>
+
+			<div class="content cloud">
+				<h2>Cloud Produkte</h2>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+			</div>
+
+			<div class="content sprach">
+				<h2>Sprach -und Datenleitung</h2>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+			</div>
+		</div><!--content-->
+
+	</div><!--wrapper-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+	$("#leitungen").hover(function() {
+		$(this).addClass("active");
+		$(".leitungen").show();
+	}, function() {
+		$(this).removeClass("active");
+		$(".leitungen").hide();
+	});
+
+	$(".leitungen").hover(function() {
+		$(".leitungen").show();
+		$("#leitungen").addClass("active");
+	}, function() {
+		$(".leitungen").hide();
+		$("#leitungen").removeClass("active");
+	});
+
+	$("#mobilfunk").hover(function() {
+		$(this).addClass("active");
+		$(".mobilfunk").show();
+	}, function() {
+		$(this).removeClass("active");
+		$(".mobilfunk").hide();
+	});
+
+	$(".mobilfunk").hover(function() {
+		$(".mobilfunk").show();
+		$("#mobilfunk").addClass("active");
+	}, function() {
+		$(".mobilfunk").hide();
+		$("#mobilfunk").removeClass("active");
+	});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+
+
+/* ====================================================   GLOBAL DEFINATION   ==================================================== */
+
+*				{ margin: 0px; padding: 0px; }
+
+img, img a, a img			{ border: none; }
+
+a 				{ color:#1D1D1D; outline: none; }
+a:hover 				{ color: #818181; text-decoration: none; }
+a:focus 				{ outline: none; }
+a.more				{ float: right; font-weight: bold; font-size: 0.90em;  padding: 5px 15px; color: #4E68AD; text-decoration: none; background: url('../img/icon/arrow.png') no-repeat right; }
+a.more:hover			{ color: #535353; }
+
+p 				{ text-align: left; line-height: 1.6em; padding: 20px 0px;}
+
+p.img img			{ float: left; margin: 0px 20px 10px 0px; }
+
+h1				{ font-size: 1.75em; font-weight: normal; font-family: 'Tauri', serif;  padding-left: 15px; color: #4E68AD; text-transform: uppercase; background: url('../img/border-blue.png') no-repeat left; }
+h1 span				{ font-size: 0.70em; color: #818181; text-transform: none; }
+h2				{ font-size: 1.25em; font-weight: normal; padding: 0px; margin: 0px; color: #4E68AD; }
+
+ul.square				{ float: left; list-style-type: bullets; margin: 0px 0px 10px 13px; color: #FFA128; }
+ul.square li			{ float: left; width: 100%; font-size: 1.10em; font-weight: bold; list-style-type: square; padding-left: 5px; line-height: 2.0em; color: #DBDBDB; }
+ul.square li span			{ color: #4E68AD; }
+
+
+/* ====================================================   BOBY & WRAPPER   ==================================================== */
+
+
+body 				{ margin: 0px auto; font-size: 0.75em; font-weight: normal; font-family: Arial; color: #535353;  background: #F1F1F1 url('../img/bg.jpg') repeat-x top; }
+.wrapper 				{ width: 1000px; margin: 0px auto; text-align: left; }
+
+
+/* ====================================================  HEADER   ==================================================== */
+
+#header 				{ float: left; width: 100%; }
+#header-top			{ float: left; width: 1014px; height: 77px; margin-left: -14px; background: url('../img/header-top-bg.png') no-repeat top; }
+#header-top ul			{ float: right; list-style-type: none; margin: 45px 30px 0px 0px; }
+#header-top ul li			{ float: left; list-style-type: none; padding: 0px 10px; border-right: 1px #ACACAC solid; }
+#header-top ul li.last-child		{ border: none; }
+
+#header #head			{ float: left; width: 100%; }
+#header #head-left			{ float: left; width: 325px; height: 210px; }
+#header #head-right		{ float: left; width: 675px; height: 210px; }
+
+
+/* ====================================================   CONTENT   ==================================================== */
+
+#content	 			{ float: left; padding: 40px 30px; background:#FFFFFF url('../img/shadow.png') no-repeat top; }
+#content .container			{ float: left; width: 615px;  margin-left: 30px; }
+
+#content #sitebar			{ float: left; width: 265px; margin-right: 30px; }
+#content #sitebar ul		{ float: left; width: 100%; list-style-type: none; }
+#content #sitebar ul li.first-child	{ border-top: 1px #DBDBDB solid; }
+#content #sitebar ul li a		{ float: left; width: 230px; font-size: 1.10em; line-height: 3.5em; color: #535353; text-decoration: none; padding-left: 35px; background: url('../img/border-grey.png') no-repeat left; border-bottom: 1px #DBDBDB solid; }
+#content #sitebar ul li a:hover	{ float: left; width: 230px; color: #F5F5F5; background: #535353 url('../img/border-grey.png') no-repeat left; }
+#content #sitebar .box		{ float: left; margin-top: 30px; }
+
+.columns				{ float: left; width: 100%; margin-top: 20px; }
+.columns-left			{ float: left; width: 340px; }
+.columns-right			{ float: left; width: 225px; margin-left: 50px; }
+
+
+/* ====================================================   FOOTER   ==================================================== */
+
+#footer				 { float: left; width: 100%; height: 120px; padding-top: 20px; text-align: right; background: url('../img/shadow-footer.png') no-repeat top; }
+

@@ -1,0 +1,74 @@
+/*
+	Coin Slider jQuery plugin CSS styles
+	http://workshop.rs/projects/coin-slider
+*/
+
+.box {
+
+	height:357px;
+	margin:40px auto;
+	position: relative; 
+	width:1003px; 
+	display:block;
+
+
+}
+.coin-slider { 
+
+position:relative;
+
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+ }
+ 
+ 
+ 
+ .coin-slider:before, .coin-slider:after
+{
+
+
+	content:"";
+    position:absolute;	
+    -webkit-box-shadow:0 0px 20px 1px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px 1px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px 1px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.coin-slider:after
+{
+	z-index:-1;
+	right:20px;
+    left:auto;
+    -webkit-transform:skew(50deg) rotate(3deg);
+       -moz-transform:skew(50deg) rotate(3deg);
+        -ms-transform:skew(50deg) rotate(3deg);
+         -o-transform:skew(50deg) rotate(3deg);
+            transform:skew(50deg) rotate(3deg);
+}
+ 
+ 
+.coin-slider a{ text-decoration: none; outline: none; border: none; 
+ }
+
+.cs-buttons { font-size: 0px; padding: 10px; float: right; text-align:left; }
+.cs-active { background-color: #B8C4CF; color: #FFFFFF; text-align:left; }
+
+.cs-title { width: 982px; padding: 10px; background-color: #000000; color: #FFFFFF; text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; font-family:Arial, Helvetica, sans-serif; font-size:12px; float:left; }
+#game{
+	margin-top:200px;
+	width:1002px;
+     height:auto;
+	 overflow:visible;
+	}
+b{ margin-bottom:40px;
+}

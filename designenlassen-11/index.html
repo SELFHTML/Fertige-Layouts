@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+
+	<meta charset="utf-8">
+	<title>Sportverein</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div id="header">
+			<a href="#"><img src="img/logo.png" width="238" height="48" alt="Webseiten Name" id="logo"></a>
+			<ul>
+				<a href="#"><li id="startseite"><i id="icon_startseite"></i>Startseite</li></a>
+				<a href="#"><li id="mitglied_werden"><i id="icon_mitglied_werden"></i>Mitglied werden</li></a>
+					<div class="dropdown mitglied">
+						<a href="#">Navigation eins</a>
+						<a href="#">Navigation zwei</a>
+						<a href="#">Navigation drei</a>
+					</div>
+				<a href="#"><li id="sportangebote"><i id="icon_sportangebote"></i>Sportangebote durchsuchen</li></a>
+				<a href="#"><li id="login"><i id="icon_login"></i>Login</li></a>
+			</ul>
+		</div><!--header-->
+
+		<div id="content">
+
+				<ul id="scnd-nav">
+					<a href="#"><li><span></span>FAQ</li></a>
+					<a href="#"><li><span></span>Hilfe & Support</li></a>
+					<a href="#"><li><span></span>AGB</li></a>
+				</ul>
+
+			<h2>Willkomen auf sport<span>vereins</span>.example</h2>
+			<p>Chupa chups oat cake gummies cheesecake pie powder. Soufflé bonbon powder carrot cake soufflé. Chocolate icing tart biscuit marzipan topping jelly. Chocolate cake chupa chups lollipop brownie. Dessert candy carrot cake cotton candy apple pie jelly danish.</p>
+
+			<div class="box">
+			<div class="box-schatten-links"></div>
+			<div class="box-schatten-rechts"></div>
+				<div class="bild testen">
+					<div class="h3">
+						<span></span>
+						<h3>30 Tage kostenlos testen</h3>
+					</div><!--h3-->
+				</div><!--bild-->
+				<div class="box-content">
+					<h4>Bonbon icing jelly beans macaroon</h4>
+					<ul>
+						<li>carot cake soufflé</li>
+						<li>Croissant topping dessert</li>
+						<li>Wypas pastry liquorice donut choc</li>
+					</ul>
+				 	<a href="#">mehr Erfahren</a>
+				</div><!--box-content-->
+			</div><!--box-->
+
+			<div class="box">
+			<div class="box-schatten-links"></div>
+			<div class="box-schatten-rechts"></div>
+				<div class="bild suchen">
+					<div class="h3">
+						<span></span>
+						<h3>Nach einem Verein suchen</h3>
+					</div><!--h3-->
+				</div><!--bild-->
+				<div class="box-content">
+					<h4>Gummi bears liquorice gingerbread </h4>
+					<p>cotton candy fruitcake jujubes pastry chocolate faworki chocolate chupa chups</p>
+					<form method="post">
+						<span></span>
+						<input type="search" name="suche" placeholder="Suchbegriff eingeben">
+					</form>
+				 	<a href="#">Detailsuche</a>
+				</div><!--box-content-->
+			</div><!--box-->
+
+			<div class="box last-child">
+			<div class="box-schatten-links"></div>
+			<div class="box-schatten-rechts"></div>
+				<div class="bild angebot">
+					<div class="h3">
+						<span></span>
+						<h3>Sportangebote suchen</h3>
+					</div><!--h3-->
+				</div><!--bild-->
+				<div class="box-content">
+					<h4>Toffee sweet jelly-o cupcake</h4>
+					<p>Croissant sweet roll carrot cake macaroon apple pie chupa chups jelly beans icing.</p>
+					<p>jelly-o tootsie roll cake chocolate bar halvah. Caramels tiramisu chocolate bear.</p>
+
+				 	<a href="#" class="a">Detailsuche</a>
+				</div><!--box-content-->
+			</div><!--box-->
+
+			<p id="footer-p">Soufflé tootsie roll muffin sweet roll liquorice wafer. Macaroon topping faworki apple pie. Applicake brownie carrot cake. Pastry ice cream applicake jujubes sweet candy wafer. Tootsie roll liquorice topping dessert apple pie sugar plum gingerbread. Jelly-o jelly-o liquorice liquorice applicake. Liquorice sweet tiramisu icing. Powder lollipop cheesecake candy jelly beans wafer. Gummi bears tiramisu jelly liquorice cheesecake croissant. Lollipop ice cream cookie gingerbread lollipop powder. </p>
+
+		</div><!--content-->
+
+	 	<div id="footer">
+
+			<ul id="social">
+				<a href="#"><li id="fb"></li></a>
+				<a href="#"><li id="twitter"></li></a>
+				<a href="#"><li id="yt"></li></a>
+			</ul>
+
+			<a href="#"><p>Impressum</p></a>
+
+		</div><!--footer-->
+
+	</div><!--wrapper-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+	$("#mitglied_werden").hover(function() {
+		$("#mitglied_werden").addClass("active");
+		$(".mitglied").show();
+	}, function() {
+		$("#mitglied_werden").removeClass("active");
+		$(".mitglied").hide();
+	});
+
+	$(".mitglied").hover(function() {
+		$("#mitglied_werden").addClass("active");
+		$(".mitglied").show();
+	}, function() {
+		$("#mitglied_werden").removeClass("active");
+		$(".mitglied").hide();
+	});
+
+</script>
+</body>
+</html>

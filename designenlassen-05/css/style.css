@@ -1,0 +1,207 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+* {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {
+	background: #dfdfdf;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #4b4b4d;	
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	background: #fff;
+	width: 100%;
+	height: 90px;
+	
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+		#logo {
+			float: left;
+			margin: 22px 0 0 33px;
+		}
+		
+		#header ul {
+			float: right;
+			font-size: 14px !important;
+			margin: 56px 0 0 0;
+			color: #3c3c3c;
+		}
+		
+			#header li {
+				display: inline-block;
+				margin: 0 20px 0 0;
+				padding: 10px;
+			}
+			
+			#header li:hover, .active {
+				background: #262626;
+				color: #fff;
+				padding: 10px;
+			}
+			
+#teaser {
+	float: left;
+	margin: 20px 0 0 0;
+}
+
+	#teaser-text {
+		float: left;
+		width: 600px;
+		margin: 50px 0 0 -50px;
+	}
+
+	#teaser-text h1, #teaser-text p {
+		background: #ef701e;
+		color: #fff;
+		padding: 10px 13px 10px 13px;
+		-webkit-border-radius: 5px 0 5px 0;
+		border-radius: 5px 0 5px 0;
+		font-weight: bold;
+		float: left;
+		text-shadow: 0 2px 0px rgba(0,0,0,0.3);
+		margin: 0 0 5px 0;
+	}
+	
+	#teaser-text h1 {
+		font-size: 24px;
+	}
+	
+	#teaser-text p {
+		font-size: 18px;
+		-webkit-border-radius: 0 0 5px 0;
+		border-radius: 0 0 5px 0;
+	}
+	
+#content {
+	background: #fff;
+	-webkit-border-radius: 0 10px 0 10px;
+	border-radius: 0 20px 40px 20px;
+	padding: 20px;
+	float: left;
+	width: 100%;
+	margin: -35px 0 0;
+	z-index: -1;
+	position: relative;
+}
+
+#news {
+	width: 540px;
+	float: right;
+	font-size: 12px;
+	margin: -6px 0 0 0;
+}
+	
+	#news-bg {
+		background: url("../img/news_bg.png") repeat-x;
+		width: 940px;
+		height: 11px;
+		margin: 6px 0 0 0;
+	}
+
+strong {
+	font-weight: bold;
+}
+
+.content {
+	width: 400px;
+	float: left;
+}
+
+	.content h2 {
+		font-size: 18px;
+		margin: 0 0 4px 70px;
+	}
+	
+	.content p {
+		font-size: 12px;
+		margin: 0 0 0 70px;
+		line-height: 16pt;s
+	}
+	
+.vpn {
+	background: url("../img/vpn.png") no-repeat;
+	height: 80px;
+	margin: 50px 20px 10px 20px;
+}
+
+	.vpn:hover {
+		background: url("../img/vpn_hover.png") no-repeat;
+	}
+	
+.mobil {
+	background: url("../img/mobil.png") no-repeat;
+	height: 80px;
+	margin: 50px 20px 10px 20px;
+}
+
+	.mobil:hover {
+		background: url("../img/mobil_hover.png") no-repeat;
+	}
+	
+.sprach {
+	background: url("../img/sprach.png") no-repeat;
+	height: 80px;
+	margin: 50px 20px 10px 20px;
+}
+
+	.sprach:hover {
+		background: url("../img/sprach_hover.png") no-repeat;
+	}
+	
+.cloud {
+	background: url("../img/cloud.png") no-repeat;
+	height: 80px;
+	margin: 50px 20px 10px 20px;
+}
+
+	.cloud:hover {
+		background: url("../img/cloud_hover.png") no-repeat;
+	}
+	
+#schatten {
+	background: url("../img/schatten.png") no-repeat;
+	position: absolute;
+	right: -28px;
+	bottom: 30px;
+	width: 28px;
+	height: 338px;
+}
+
+.dropdown {
+	position: absolute;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.90);
+	padding: 10px;
+	display: none;
+	
+}
+
+	.leitungen {
+		margin: 0 0 0 209px
+	}
+	
+	.mobilfunk {
+		margin: 0 0 0 387px;
+	}
+
+	.dropdown a {
+		float: left;
+		clear: both;
+		margin: 10px 0 10px 0;
+		color: #fff;
+	}
