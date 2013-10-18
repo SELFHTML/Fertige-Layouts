@@ -1,62 +1,38 @@
 ﻿<!doctype html>
 <html>
-<head>
-	<title>Self HTML 02</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<link href="css/default.css" rel="stylesheet" type="text/css" />
-	<link href="themes/green/color.css" rel="stylesheet" type="text/css" /><!-- Hier kann die Farbe gewählt werden -->
-	<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<!-- HEADER -->
-	<div id="header" class="clearfix">
-		<div class="wrapper">
-			<ul id="mainMenu">
+	<head>
+		<title>Self HTML 02</title>
+		<meta charset="UTF-8" />
+		<link href="css/default.css" rel="stylesheet" type="text/css" />
+		<link href="themes/green/color.css" rel="stylesheet" type="text/css" /><!-- Hier kann die Farbe gewählt werden -->
+		<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+	</head>
+	<body>	
+		<header class="banner">
+			<ul class='menu_top clearfix'>
 				<li><a href="index.html">Home</a></li>
-
 				<li><a href="orange.html">Orange Theme</a></li>
-
 				<li><a id="active" href="green.html">Green Theme</a></li>
-
 				<li><a href="violett.html">Violett Theme</a></li>
-
 				<li><a href="pink.html">Pink Theme</a></li>
 			</ul>
 
-			<div id="logo">
-				<a href="index.html"><img src="themes/green/logo.png" alt="Startseite" title="Startseite"></a>
+			<div class='logo_wrapper'>
+				<a href="index.html" class="logo">
+					<img src="themes/green/logo.png" alt="Startseite" title="Startseite">
+				</a>
 			</div>
-		</div>
-	</div>
+		</header>
 
-	<!-- CONTENT -->
-	<div id="content">
-		<div  class="wrapper">
-			<ul id="columns">
+		<div class='content'>
+			<ul class='columns clearfix'>
 				<li>
-					<div class="headline">
+					<header class="headline">
 						<img src="img/icon/icon-big-hand.png" alt="">
 						<h1>Die Überschrift</h1>
 
 						<h2>Lorem ipsum dolor sit<br />consectetuer adipi</h2>
-					</div>
-
-					<p class="border">
-						Ut wisi enim ad minim veniam, quis nostrude xerci tation ullamcorper suscipit lobortis nislu taliquip
-						ex ea commodo consequat. Duis auti emvel eum iriure dolor in hendrerit in vulputat evelit esise molestie
-						consequat, vel illum doli ore eu feugiat nulla facilisis at vero eti accumi san et iusto odio dignissim
-						qui blandit praesi ent luptatum zzril delenit augue duis dolore te feugait nulla tempor facilisi.<br />
-						<a class="more" href="#">weiter lesen</a>
-					</p>
-				</li>
-
-				<li class="middle-child">
-					<div class="headline">
-						<img src="img/icon/icon-big-globe.png" alt="">
-						<h1>Die Überschrift</h1>
-
-						<h2>Lorem ipsum dolor sit<br />consectetuer adipi</h2>
-					</div>
+					</header>
 
 					<p class="border">
 						Ut wisi enim ad minim veniam, quis nostrude xerci tation ullamcorper suscipit lobortis nislu taliquip
@@ -68,12 +44,28 @@
 				</li>
 
 				<li>
-					<div class="headline">
+					<header class="headline">
+						<img src="img/icon/icon-big-globe.png" alt="">
+						<h1>Die Überschrift</h1>
+
+						<h2>Lorem ipsum dolor sit<br />consectetuer adipi</h2>
+					</header>
+
+					<p class="border">
+						Ut wisi enim ad minim veniam, quis nostrude xerci tation ullamcorper suscipit lobortis nislu taliquip
+						ex ea commodo consequat. Duis auti emvel eum iriure dolor in hendrerit in vulputat evelit esise molestie
+						consequat, vel illum doli ore eu feugiat nulla facilisis at vero eti accumi san et iusto odio dignissim
+						qui blandit praesi ent luptatum zzril delenit augue duis dolore te feugait nulla tempor facilisi.<br />
+						<a class="more" href="#">weiter lesen</a>
+					</p>
+				</li>
+				<li>
+					<header class="headline">
 						<img src="img/icon/icon-big-people.png" alt="">
 						<h1>Die Überschrift</h1>
 
 						<h2>Lorem ipsum dolor sit<br />consectetuer adipi</h2>
-					</div>
+					</header>
 
 					<p class="border">
 						Ut wisi enim ad minim veniam, quis nostrude xerci tation ullamcorper suscipit lobortis nislu taliquip
@@ -85,8 +77,8 @@
 				</li>
 			</ul>
 
-			<div id="columns-hot">
-				<div id="columns-left">
+			<ul class="columns-hot clearfix">
+				<li>
 					<img src="img/icon/icon-small-wave.png" alt="">
 					<h1>Lorem ipsum dolor sit</h1>
 
@@ -95,9 +87,9 @@
 						dolore magna aliquamio erat volutpat enim ad minim...<br />
 						<a class="more" href="#">weiter lesen</a>
 					</p>
-				</div>
+				</li>
 
-				<div id="columns-right">
+				<li>
 					<img src="img/icon/icon-small-light.png" alt="">
 					<h1>Lorem ipsum dolor sit</h1>
 
@@ -106,48 +98,37 @@
 						dolore magna aliquamio erat volutpat enim ad minim...<br />
 						<a class="more" href="#">weiter lesen</a>
 					</p>
-				</div>
+				</li>
+			</ul>
+		</div>
+
+		<footer>
+			<div class="wrapper">
+				<ul class="first-child">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Profil</a></li>
+					<li><a href="#">Leistungen</a></li>
+					<li><a href="#">Referenzen</a></li>
+				</ul>
+
+				<ul class="first-middle">
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">Kontakt</a></li>
+					<li><a href="#">Disclaimer</a></li>
+					<li><a href="#">Impressum</a></li>
+				</ul>
+
+				<ul class="first-middle">
+					<li>Phone: 0123 - 57 68 89</li>
+					<li>Email: <a href="mailto:info@duit-media.de">info@duit-media.de</a></li>
+					<li><a href="http://duit-media.de">www.duit-media.de</a></li>
+				</ul>
+
+				<ul class="first-last">
+					<li><a href="#"><img src="img/footer-logo.png" alt=""></a></li>
+					<li>© 2013 by <a href="http://duit-media.de">DUIT Media</a> .All Rights Reserved</li>
+				</ul>
 			</div>
-		</div>
-	</div>
-
-	<!-- FOOTER -->
-	<div id="footer">
-		<div class="wrapper">
-			<ul class="first-child">
-				<li><a href="#">Home</a></li>
-
-				<li><a href="#">Profil</a></li>
-
-				<li><a href="#">Leistungen</a></li>
-
-				<li><a href="#">Referenzen</a></li>
-			</ul>
-
-			<ul class="first-middle">
-				<li><a href="#">Sitemap</a></li>
-
-				<li><a href="#">Kontakt</a></li>
-
-				<li><a href="#">Disclaimer</a></li>
-
-				<li><a href="#">Impressum</a></li>
-			</ul>
-
-			<ul class="first-middle">
-				<li>Phone: 0123 - 57 68 89</li>
-
-				<li>Email: <a href="mailto:info@duit-media.de">info@duit-media.de</a></li>
-
-				<li><a href="http://duit-media.de">www.duit-media.de</a></li>
-			</ul>
-
-			<ul class="first-last">
-				<li><a href="#"><img src="img/footer-logo.png" alt=""></a></li>
-
-				<li>© 2013 by <a href="http://duit-media.de">DUIT Media</a> .All Rights Reserved</li>
-			</ul>
-		</div>
-	</div>
-</body>
+		</footer>
+	</body>
 </html>

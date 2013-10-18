@@ -1,88 +1,287 @@
-/*
-		#####################################################################################################################
-		#####################################################################################################################
-		#####################################################################################################################
-		#############################								#############################
-		#############################								#############################
-		#############################		Autor Design: DUIT Media				#############################
-		#############################		Autor Design URL: http://duit-media.de		#############################
-		#############################		Autor Umsetzung: WEB3x				#############################
-		#############################		Autor URL: http://web3x.de				#############################
-		#############################		Autor Name: Markus Plätzer & Eugen Ganshorn		#############################
-		#############################								#############################
-		#############################								#############################
-		#####################################################################################################################
-		#####################################################################################################################
-		#####################################################################################################################
-*/
+*
+{ 
+	margin: 0px;
+	padding: 0px;
+}
+
+.clearfix
+{
+	zoom: 1;
+}
+
+.clearfix:after
+{
+	display: table;
+	content: "";
+	zoom: 1;
+	clear: both;
+}
+
+.clearfix:before
+{
+	display: table;
+	content: "";
+	zoom: 1;
+}
 
 
-/* ====================================================   GLOBAL DEFINATION   ==================================================== */
+img, img a, a img
+{ 
+	border: none; 
+}
 
-*				{ margin: 0px; padding: 0px; }
+body 
+{ 
+	margin: 0px auto; 
+	font-size: 0.75em; 
+	font-weight: normal; 
+	font-family: Arial; 
+	color: #4B4B4B;
+	background: #FFFFFF;
+}
 
-img, img a, a img			{ border: none; }
+a 
+{
+	color:#131313;
+	text-decoration: none;
+	outline: none;
+}
 
-body 				{ margin: 0px auto; font-size: 0.75em; font-weight: normal; font-family: Arial; color: #4B4B4B;  background: #FFFFFF; }
+a:hover 
+{
+	color: #909090;
+}
 
-a 				{ color:#131313; text-decoration: none; outline: none; }
-a:hover 				{ color: #909090; }
-a:focus 				{ outline: none; }
-a.more				{ float: right; padding: 5px 10px; margin-top: 20px; color: #FFFFFF; }
-a.more:hover			{ background: #909090; }
-#columns-hot a.more		{ background: #2D2D2D; }
-#columns-hot a.more:hover		{ background: #424242; }
+a:focus 
+{
+	outline: none; 
+}
 
-p 				{ text-align: left; line-height: 1.6em; margin-top: 20px; padding: 20px 0px;}
-p.border				{ border-top: 1px #D1D1D1 solid; }
-#columns-hot p			{ color: #FFFFFF; }
+a.more
+{
+	float: right;
+	padding: 5px 10px;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
 
-h1				{ font-size: 1.50em; font-weight: normal; font-family: 'Tauri', serif; text-transform: uppercase; }
-#columns-hot h1			{ color: #313131; }
-h2				{ font-size: 1.0em; font-weight: normal; padding: 0px; margin: 0px; color: #737373; text-transform: none; line-height: 1.15em;  margin-top: 8px; }
+a.more:hover
+{
+	background: #909090;
+}
+
+.columns-hot a.more
+{
+	background: #2D2D2D;
+}
+
+.columns-hot a.more:hover
+{
+	background: #424242;
+}
+
+p 
+{
+	text-align: left;
+	line-height: 1.6em;
+	margin-top: 20px;
+	padding: 20px 0px;
+}
+
+p.border
+{
+	border-top: 1px #D1D1D1 solid;
+}
+
+.columns-hot p
+{
+	color: #FFFFFF;
+}
+
+h1
+{
+	font-size: 1.50em;
+	font-weight: normal;
+	font-family: 'Tauri',serif; 
+	text-transform: uppercase;
+}
+
+h2
+{
+	font-size: 1.0em;
+	font-weight: normal;
+	padding: 0px; 
+	margin: 0px; 
+	color: #737373; 
+	text-transform: none; 
+	line-height: 1.15em;
+	margin-top: 8px;
+}
 
 .headline img,
-#columns-left img,
-#columns-right img			{ float: left; margin-right: 20px; }
+.columns-hot li img,
+.columns-hot li img
+{
+	float: left;
+	margin-right: 20px;
+}
+
+.wrapper, .menu_top, .content
+{
+	max-width: 960px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.banner
+{
+	width: 100%;
+	height: 380px;	
+}
+
+.banner  .menu_top
+{
+	list-style-type: none;
+	font-size: 1.25em;
+	font-family: 'Tauri', serif;
+}
+
+.banner  .menu_top li
+{
+	float: left;
+	display: inline-block;
+	margin-right: 1px;
+}
+
+.banner  .menu_top li a
+{
+	float: left;
+	padding: 30px 15px 20px 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.banner .logo_wrapper
+{
+	margin: 0px auto;
+	margin-top: 100px;	
+	width: 430px;		
+}
+
+.banner  .logo
+{	
+	margin-left: -150px;
+}
+
+.content
+{
+	margin-top: 40px;
+	padding: 0px 9px;
+}
+
+.columns
+{
+	margin: -9px;
+	list-style-type: none;
+}
+
+.columns li
+{
+	float: left; 
+	width: 248px;
+	background: #EFEFEF; 
+	padding: 30px;
+	margin: 9px;
+}
+
+.columns li.middle-child
+{
+	margin: 0px 18px; 
+}
+/*http://wp11179682.server-he.de/api_fernbusse/fb/*/
+.columns-hot
+{
+	margin-top: 18px;
+	list-style-type: none;
+}
+
+.columns-hot li h1
+{
+	color: #313131;
+}
+
+.columns-hot li
+{
+	float: left;
+	/*width: 420px;*/
+	width: 40%;
+	min-width: 248px;
+	padding: 30px 5%;
+}
+
+footer
+{
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+	padding: 40px 0px;
+	color: #757575;
+	background: #EFEFEF;
+}
+
+footer ul.first-child
+{
+	float: left;
+	list-style-type: none;
+	margin-left: 30px;
+}
+
+footer ul.first-middle
+{
+	float: left;
+	list-style-type: none;
+	margin-left: 50px;
+}
+
+footer ul.first-last
+{
+	float: right;
+	list-style-type: none;
+	margin: 0px 30px 0px 50px;
+}
+
+footer ul li
+{
+	line-height: 1.6em;
+}
+
+footer ul li a
+{
+	color: #757575;
+}
+
+footer ul li a:hover
+{
+	color: #434343;
+}
+
+/*--- Blue Style als Default ---*/
+a.more,
+.banner .menu_top  li a:hover, 
+.banner .menu_top  li a#active,
+.columns-hot li
+{
+	background: #009ECE;
+}
+
+h1
+{
+	color: #018DB8;
+}
 
 
-/* ====================================================   WRAPPER   ==================================================== */
-
-.wrapper 				{ width: 960px; margin: 0px auto; text-align: left; }
-
-
-/* ====================================================  HEADER   ==================================================== */
-
-#header 				{ width: 100%; height: 380px; }
-
-#header #mainMenu 		{ position: relative; top: 0px; left: 0px;  list-style-type: none; font-size: 1.25em; font-family: 'Tauri', serif; }
-#header #mainMenu li 		{ float: left; display: inline-block; margin-right: 1px; }
-#header #mainMenu li a 		{ float: left; padding: 30px 15px 20px 15px; text-transform: uppercase;  color: #FFFFFF; }
-
-#header #logo			{ float: left; margin: 100px 0 0 100px; }
-
-
-/* ====================================================   CONTENT   ==================================================== */
-
-#content	 			{ width: 100%; margin-top: 40px;}
-
-#columns-hot			{ float: left; padding: 30px; margin-top: 18px; }
-#columns-left			{ float: left; width: 375px; margin-right: 150px; }
-#columns-right			{ float: left; width: 375px; }
-
-#columns			{ float: left; list-style-type: none; }
-#columns li			{ float: left; width: 248px; background: #EFEFEF; padding: 30px; }
-#columns li.middle-child		{ margin: 0px 18px; }
-
-
-/* ====================================================   FOOTER   ==================================================== */
-
-#footer				 { float: left; width: 100%; margin-top: 40px; padding: 40px 0px; color: #757575; background: #EFEFEF; }
-
-#footer ul.first-child			{ float: left; list-style-type: none; margin-left: 30px; }
-#footer ul.first-middle		{ float: left; list-style-type: none; margin-left: 50px; }
-#footer ul.first-last			{ float: right; list-style-type: none; margin: 0px 30px 0px 50px; }
-#footer ul	 li 			{ line-height: 1.6em; }
-#footer ul	 li a 			{ color: #757575; }
-#footer ul li a:hover			{ color: #434343; }
-
+.banner 
+{
+	background: #000000 url('../img/header.png') no-repeat center bottom;
+	border-top: 5px solid #009ECE;
+}
